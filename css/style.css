@@ -78,23 +78,27 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	background:#000;
 	color:#fff;
 	padding:10px;}
+.inner-container{
+	font-size:18px;
+	line-height:1.4em;}
 .inner-block{
-	padding:25px 10%;}	
+	padding:25px 10%;
+	}	
 .inner-block h2,.inner-block h3,.inner-block h4,.inner-block h5,.inner-block h6{
 	margin:0 0 0.55em 0;}
 .inner-block h2{
-	font-size:28px;
+	font-size:32px;
 	padding:0 0 0 10px;
 	border-left:10px solid #787878;
 	}
 .inner-block h3{
-	font-size:25px;}
+	font-size:28px;}
 .inner-block h4{
-	font-size:21px;}
+	font-size:24px;}
 .inner-block h5{
-	font-size:18px;}
+	font-size:20px;}
 .inner-block h6{
-	font-size:16px;}
+	font-size:18px;}
 .inner-block .full-img{
 	width:100%;
 	height:auto;
