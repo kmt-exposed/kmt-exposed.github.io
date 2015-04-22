@@ -45,11 +45,12 @@ a:hover,a:active{
 	}
 
 #nav-block{
-	position:absolute;
+	position:fixed;
 	left:0px;
 	top:0px;
 	width:100%;
 	background:#404040;
+	z-index:1000;
 	}
 .toggle{
 	display:none;
