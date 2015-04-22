@@ -7,9 +7,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <title>關於｜國民黨黨產揭露網</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/custor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
     </div>
   </nav>
 <div class="inner-container">
-<div class="container">
+<div class="tabinfo">
     <div class="navbar-inner">
       <ul class="nav nav-pills">
         <li role="presentation" class="dropdown">
@@ -80,17 +82,12 @@
     </div>
     
     
-    <div class="row">
       <p>資料來源：<a href="http://vote.ly.g0v.tw/" target="_blank">立委投票指南</a></p>
       <p> 此為2012年競選政治獻金資料，不分區立委無資料，補選立委則尚未取得資料。</p>
-      
+      </div>
       <div id="chart"></div>
-    </div>
-  </div>
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</div>
+
   <script src="http://d3js.org/d3.v2.min.js"></script>
   <script>
   function renderChart(column, source) {
@@ -502,7 +499,6 @@
     renderChart('in_total', 'legislator');
   });
   </script>
-</div>
 </div>
 </body>
 

@@ -6,7 +6,12 @@ body{
 body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	margin:0px;
 	padding:0px;
-	list-style-type:none;}
+	list-style-type:none;
+	line-height:1.2em;}
+a{
+	color:#008ccd;}
+a:hover,a:active{
+	color:#006898;}
 .header-banner{
 	height:1px;
 	padding-top:40%;
@@ -28,7 +33,8 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	font-size:56px;
 	color:#fff;
 	padding:15px;
-	text-shadow:0px 0px 8px #000;}
+	text-shadow:0px 0px 8px #000;
+	font-weight:bold;}
 .header-banner p{
 	padding:15px;
 	color:#fff;
@@ -63,13 +69,21 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	}
 .icontainer{
 	padding:100px;
-	text-align:center;}
+	text-align:center;
+	position:relative;}
 .icontainer h2{
 	font-size:42px;
 	margin:0 0 10px 0;
-	text-shadow:1px 1px 0px #fff;}
+	text-shadow:1px 1px 0px #fff;
+	position:relative;}
 .icontainer p{
-	margin:0 0 10px 0;}	
+	margin:0 auto 10px auto;
+	position:relative;
+	padding:10px 15px;
+	background:url(../img/bgc-02.png);
+	border-radius:10px;
+	width:45%;
+	}	
 .icontainer a{
 	display:block;
 	text-decoration:none;
@@ -77,10 +91,12 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	margin:auto;
 	background:#000;
 	color:#fff;
-	padding:10px;}
+	padding:10px;
+	position:relative;}
 .inner-container{
 	font-size:18px;
-	line-height:1.4em;}
+	line-height:1.4em;
+	background:#e6e6e6;}
 .inner-block{
 	padding:25px 10%;
 	}	
@@ -133,20 +149,53 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	text-align:center;
 	padding:15px;
 	margin:0 0 15px 0;
-	background:#6e7eb2;
 	text-decoration:none;
 	color:#fff;
-	border-radius:10px;}
+	border-radius:10px;
+	line-height:1em;}
+.btn-group a{
+	float:left;
+	margin:0 15px 15px 0;
+}
+
+.ibtnc-01{background:#6e7eb2;}
+.ibtnc-02{background:#000;}
+.ibtnc-03{background:#5f5f5f;}
+
 .red{
 	color:#E30003;
 	font-weight:bold;}
 
+.tabinfo{
+	padding:30px 9%;}
+.navbar-inner{
+	height:60px;}
+
+.dropdown-toggle{
+	background:#cfcfcf;}
+.img-house{
+	width:529px;
+	height:380px;
+	background:url(../img/index-img-house.png) no-repeat;
+	position:absolute;
+	left:0px;
+	bottom:0px;}
+.icc-img{
+	background:url(../img/img-index-02.jpg) no-repeat fixed;
+	background-size:cover;}
 /*背景顏色*/
 .icc-01{
 	background:#e6e6e6;}
 .icc-02{
 	background:#C0C0C0;}
-
+	
+@media (max-width: 960px) {
+		.img-house{
+	left:-180px;
+	}
+	.icontainer p{
+	width:75%;
+	}}
 @media (max-width: 640px) {
 	.header-banner{
 	height:350px;
@@ -166,4 +215,10 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	float:none;
 	text-align:center;
 	border-top:1px solid #000;
-	}}
+	}
+	
+	.img-house{
+	left:-280px;
+	bottom:-20px;
+	}
+	}
