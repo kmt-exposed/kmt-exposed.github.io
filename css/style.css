@@ -189,7 +189,16 @@ a:hover,a:active{
 	background:#e6e6e6;}
 .icc-02{
 	background:#C0C0C0;}
-	
+
+html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+
 @media (max-width: 960px) {
 		.img-house{
 	left:-180px;
