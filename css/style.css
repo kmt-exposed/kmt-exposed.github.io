@@ -7,7 +7,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 	margin:0px;
 	padding:0px;
 	list-style-type:none;
-	line-height:1.2em;}
+	line-height:1.7em;}
 a{
 	color:#008ccd;}
 a:hover,a:active{
@@ -84,7 +84,7 @@ a:hover,a:active{
 	background:url(../img/bgc-02.png);
 	border-radius:10px;
 	width:45%;
-	}	
+	}
 .icontainer a{
 	display:block;
 	text-decoration:none;
@@ -96,7 +96,7 @@ a:hover,a:active{
 	position:relative;}
 .inner-container{
 	font-size:18px;
-	line-height:1.4em;
+	line-height:1.7em;
 	background:#e6e6e6;}
 .inner-block{
 	padding:25px 10%;
@@ -128,7 +128,9 @@ a:hover,a:active{
 	list-style-type:circle;
 	}
 .inner-block p{
-	margin:0 0 10px 0;}
+	margin:30px 0 30px 0;
+	line-height:1.7em;
+	}
 .inner-block ol{
 	list-style-type:decimal;}
 .table-striped{
@@ -181,14 +183,26 @@ a:hover,a:active{
 	position:absolute;
 	left:0px;
 	bottom:0px;}
-.icc-img{
+.icc-company-img{
 	background:url(../img/img-index-02.jpg) no-repeat fixed;
 	background-size:cover;}
+.icc-action-img{
+
+	}
 /*背景顏色*/
 .icc-01{
 	background:#e6e6e6;}
 .icc-02{
 	background:#C0C0C0;}
+
+blockquote {
+	margin:0 auto 10px auto;
+	position:relative;
+	padding:10px 15px;
+	background:url(../img/bgc-02.png);
+	border-radius:10px;
+	width:90%;
+	}
 
 html, body, #map-canvas {
         margin: 0;
