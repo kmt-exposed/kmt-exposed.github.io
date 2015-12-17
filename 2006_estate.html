@@ -68,7 +68,21 @@
         var mapOptions = {
           center: new google.maps.LatLng(23.69781, 120.96051499999999),
           zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+              style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+              position: google.maps.ControlPosition.TOP_CENTER
+          },
+          zoomControl: true,
+          zoomControlOptions: {
+              position: google.maps.ControlPosition.LEFT_CENTER
+          },
+          scaleControl: true,
+          streetViewControl: true,
+          streetViewControlOptions: {
+              position: google.maps.ControlPosition.LEFT_TOP
+          }
         }
         map = new google.maps.Map(mapCanvas, mapOptions);
         var promise = $.getJSON("/data/2006_estate.geojson");
