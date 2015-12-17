@@ -77,7 +77,7 @@
           map.data.addGeoJson(cachedGeoJson);
         });
         map.data.addListener('click', function(event) {
-          infoWindow.setContent(properties_to_html(event.feature.k));
+          infoWindow.setContent(properties_to_html(event.feature["O"]));
           var anchor = new google.maps.MVCObject();
           anchor.set("position", event.latLng);
           infoWindow.open(map, anchor);
