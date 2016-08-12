@@ -46,7 +46,7 @@
       <!-- Bootstrap Core JavaScript -->
       <script src="js/bootstrap.min.js"></script>
       <!-- Custom Theme JavaScript -->
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5ZFWu2i_IYON4xsWYmHLFX6SKA1V1dyw"></script>
       <script>
       var map;
       var cachedGeoJson;
@@ -91,7 +91,7 @@
           map.data.addGeoJson(cachedGeoJson);
         });
         map.data.addListener('click', function(event) {
-          infoWindow.setContent(properties_to_html(event.feature["O"]));
+          infoWindow.setContent(properties_to_html(event.feature.f));
           var anchor = new google.maps.MVCObject();
           anchor.set("position", event.latLng);
           infoWindow.open(map, anchor);
