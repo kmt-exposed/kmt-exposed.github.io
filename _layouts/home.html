@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <div id="all-wrap">
+      {% include header.html %}
+
+      <header class="header-banner">
+        <div>
+          <h1>{{site.title}}</h1>
+          <p>{{site.description}}</p>
+        </div>
+      </header>
+
+      {{ content }}
+
+      {% include footer.html %}
+
+  </body>
+
+</html>
